@@ -69,7 +69,7 @@ function parseTbl(lines,start){
   hds.forEach(function(hd){h+='<th>'+inl(hd)+'</th>';});
   h+='</tr></thead><tbody>';
   rows.forEach(function(row,ri){
-    h+='<tr'+(ri%2===1?' class="alt"':')+'>';
+    h+='<tr'+(ri%2===1?' class=\'alt\'':'')+'>'; 
     row.forEach(function(cell){h+='<td>'+inl(cell)+'</td>';});
     h+='</tr>';
   });
