@@ -1,0 +1,452 @@
+{
+  "es": {
+    "h1_variations": ["¿Problemas con {tema}?", "Aprende {tema} fácilmente", "Domina {tema} en minutos", "Guía completa de {tema}"],
+    "desc": "Resuelve problemas de {tema} al instante con explicaciones paso a paso. Educare AI es la herramienta educativa más avanzada.",
+    "btn": "🚀 DESCARGAR EN PLAY STORE",
+    "benefit": "✓ Soluciones instantáneas ✓ Paso a paso ✓ Tutor IA 24/7 ✓ 98% precisión",
+    "subtexts": ["⭐ 4.8/5 con más de 15,000 reseñas", "🏆 App educativa #1 en 25 países"],
+    "features": ["Escanea y resuelve con cámara", "Explicaciones paso a paso", "Problemas de práctica", "Modo offline disponible"],
+    "cta_urgency": ["Oferta limitada: Prueba gratis", "Descarga ahora - Es gratis!"]
+  },
+  "en": {
+    "h1_variations": ["Struggling with {tema}?", "Learn {tema} easily", "Master {tema} in minutes", "Complete guide to {tema}"],
+    "desc": "Solve {tema} problems instantly with step-by-step explanations. Educare AI is the most advanced educational tool.",
+    "btn": "🚀 DOWNLOAD ON PLAY STORE",
+    "benefit": "✓ Instant Solutions ✓ Step-by-Step ✓ 24/7 AI Tutor ✓ 98% Accuracy",
+    "subtexts": ["⭐ 4.8/5 from 15,000+ reviews", "🏆 #1 Educational App in 25 countries"],
+    "features": ["Scan and solve with camera", "Step-by-step explanations", "Practice problems", "Offline mode available"],
+    "cta_urgency": ["Limited time: Free trial", "Download now - It's free!"]
+  },
+  "fr": {
+    "h1_variations": ["Des problèmes avec {tema}?", "Apprenez {tema} facilement", "Maîtrisez {tema} en minutes", "Guide complet de {tema}"],
+    "desc": "Résolvez des problèmes de {tema} instantanément avec des explications étape par étape. Educare AI est l'outil éducatif le plus avancé.",
+    "btn": "🚀 TÉLÉCHARGER SUR PLAY STORE",
+    "benefit": "✓ Solutions instantanées ✓ Étape par étape ✓ Tuteur IA 24/7 ✓ Précision 98%",
+    "subtexts": ["⭐ 4.8/5 avec plus de 15 000 avis", "🏆 Application éducative #1 dans 25 pays"],
+    "features": ["Scannez et résolvez avec l'appareil photo", "Explications étape par étape", "Problèmes de pratique", "Mode hors ligne disponible"],
+    "cta_urgency": ["Offre limitée: Essai gratuit", "Téléchargez maintenant - C'est gratuit!"]
+  },
+  "de": {
+    "h1_variations": ["Probleme mit {tema}?", "Lerne {tema} leicht", "Meistere {tema} in Minuten", "Vollständiger Leitfaden für {tema}"],
+    "desc": "Löse {tema} Probleme sofort mit Schritt-für-Schritt-Erklärungen. Educare AI ist das fortschrittlichste Bildungswerkzeug.",
+    "btn": "🚀 IM PLAY STORE HERUNTERLADEN",
+    "benefit": "✓ Sofortige Lösungen ✓ Schritt-für-Schritt ✓ KI-Tutor 24/7 ✓ 98% Genauigkeit",
+    "subtexts": ["⭐ 4.8/5 aus über 15.000 Bewertungen", "🏆 #1 Bildungs-App in 25 Ländern"],
+    "features": ["Mit Kamera scannen und lösen", "Schritt-für-Schritt-Erklärungen", "Übungsaufgaben", "Offline-Modus verfügbar"],
+    "cta_urgency": ["Begrenztes Angebot: Kostenlose Testversion", "Jetzt herunterladen - Kostenlos!"]
+  },
+  "pt": {
+    "h1_variations": ["Problemas com {tema}?", "Aprenda {tema} facilmente", "Domine {tema} em minutos", "Guia completo de {tema}"],
+    "desc": "Resolva problemas de {tema} instantaneamente com explicações passo a passo. Educare AI é a ferramenta educacional mais avançada.",
+    "btn": "🚀 BAIXAR NA PLAY STORE",
+    "benefit": "✓ Soluções instantâneas ✓ Passo a passo ✓ Tutor IA 24/7 ✓ 98% precisão",
+    "subtexts": ["⭐ 4.8/5 com mais de 15.000 avaliações", "🏆 Aplicativo educacional nº 1 em 25 países"],
+    "features": ["Escaneie e resolva com a câmera", "Explicações passo a passo", "Problemas de prática", "Modo offline disponível"],
+    "cta_urgency": ["Oferta por tempo limitado: Teste grátis", "Baixe agora - É grátis!"]
+  },
+  "it": {
+    "h1_variations": ["Problemi con {tema}?", "Impara {tema} facilmente", "Padroneggia {tema} in minuti", "Guida completa a {tema}"],
+    "desc": "Risolvi problemi di {tema} istantaneamente con spiegazioni passo passo. Educare AI è lo strumento educativo più avanzato.",
+    "btn": "🚀 SCARICA SU PLAY STORE",
+    "benefit": "✓ Soluzioni istantanee ✓ Passo dopo passo ✓ Tutor IA 24/7 ✓ Precisione 98%",
+    "subtexts": ["⭐ 4.8/5 con oltre 15.000 recensioni", "🏆 App educativa n. 1 in 25 paesi"],
+    "features": ["Scansiona e risolvi con la fotocamera", "Spiegazioni passo passo", "Problemi di pratica", "Modalità offline disponibile"],
+    "cta_urgency": ["Offerta a tempo limitato: Prova gratuita", "Scarica ora - È gratis!"]
+  },
+  "nl": {
+    "h1_variations": ["Problemen met {tema}?", "Leer {tema} gemakkelijk", "Beheers {tema} in minuten", "Volledige gids voor {tema}"],
+    "desc": "Los {tema} problemen direct op met stap-voor-stap uitleg. Educare AI is de meest geavanceerde educatieve tool.",
+    "btn": "🚀 DOWNLOADEN IN PLAY STORE",
+    "benefit": "✓ Directe oplossingen ✓ Stap-voor-stap ✓ 24/7 AI-tutor ✓ 98% nauwkeurigheid",
+    "subtexts": ["⭐ 4.8/5 van meer dan 15.000 beoordelingen", "🏆 #1 Educatieve app in 25 landen"],
+    "features": ["Los op met de camera", "Stap-voor-stap uitleg", "Oefenproblemen", "Offline modus beschikbaar"],
+    "cta_urgency": ["Beperkte tijd: Gratis proefperiode", "Download nu - Gratis!"]
+  },
+  "pl": {
+    "h1_variations": ["Problemy z {tema}?", "Naucz się {tema} łatwo", "Opanuj {tema} w minutę", "Kompletny przewodnik po {tema}"],
+    "desc": "Rozwiązuj problemy z {tema} natychmiast z wyjaśnieniami krok po kroku. Educare AI to najbardziej zaawansowane narzędzie edukacyjne.",
+    "btn": "🚀 POBIERZ Z PLAY STORE",
+    "benefit": "✓ Natychmiastowe rozwiązania ✓ Krok po kroku ✓ 24/7 AI Tutor ✓ 98% dokładności",
+    "subtexts": ["⭐ 4.8/5 z ponad 15.000 recenzji", "🏆 Aplikacja edukacyjna nr 1 w 25 krajach"],
+    "features": ["Rozwiązuj przez zrobienie zdjęcia", "Wyjaśnienia krok po kroku", "Problemy praktyczne z rozwiązaniami", "Tryb offline dostępny"],
+    "cta_urgency": ["Ograniczona oferta: Darmowy okres próbny", "Pobierz teraz - Za darmo!"]
+  },
+  "ru": {
+    "h1_variations": ["Проблемы с {tema}?", "Изучайте {tema} легко", "Освойте {tema} за минуты", "Полное руководство по {tema}"],
+    "desc": "Решайте задачи по {tema} мгновенно с пошаговыми объяснениями. Educare AI - самый передовой образовательный инструмент.",
+    "btn": "🚀 СКАЧАТЬ В PLAY STORE",
+    "benefit": "✓ Мгновенные решения ✓ Пошагово ✓ ИИ-репетитор 24/7 ✓ 98% точность",
+    "subtexts": ["⭐ 4.8/5 на основе более 15 000 отзывов", "🏆 Образовательное приложение № 1 в 25 странах"],
+    "features": ["Решайте по фото с камеры", "Пошаговые объяснения", "Практические задачи с решениями", "Доступен офлайн-режим"],
+    "cta_urgency": ["Ограниченное предложение: Бесплатная пробная версия", "Скачать сейчас - Бесплатно!"]
+  },
+  "ja": {
+    "h1_variations": ["{tema}でお困りですか？", "{tema}を簡単に学ぶ", "{tema}を数分でマスター", "{tema}の完全ガイド"],
+    "desc": "{tema}の問題をステップバイステップの説明で即座に解決します。Educare AIは最も先進的な教育ツールです。",
+    "btn": "🚀 Playストアで入手",
+    "benefit": "✓ 即時解決 ✓ ステップバイステップ ✓ 24時間AIチューター ✓ 98%の精度",
+    "subtexts": ["⭐ 15,000件以上のレビューで4.8/5", "🏆 25か国で教育アプリ第1位"],
+    "features": ["カメラで撮影して解決", "ステップバイステップの説明", "解答付き練習問題", "オフラインモード利用可能"],
+    "cta_urgency": ["期間限定: 無料トライアル", "今すぐダウンロード - 無料！"]
+  },
+  "ko": {
+    "h1_variations": ["{tema}(으)로 어려움을 겪고 계신가요?", "{tema}을(를) 쉽게 배우세요", "{tema}을(를) 몇 분 안에 마스터하세요", "{tema} 완전 가이드"],
+    "desc": "{tema} 문제를 단계별 설명으로 즉시 해결하세요. Educare AI는 가장 진보된 교육 도구입니다.",
+    "btn": "🚀 Play 스토어에서 다운로드",
+    "benefit": "✓ 즉시 해결 ✓ 단계별 설명 ✓ 24/7 AI 튜터 ✓ 98% 정확도",
+    "subtexts": ["⭐ 15,000개 이상의 리뷰에서 4.8/5", "🏆 25개국에서 1위 교육 앱"],
+    "features": ["카메라로 찍어서 해결", "단계별 설명", "해답이 포함된 연습 문제", "오프라인 모드 사용 가능"],
+    "cta_urgency": ["한정 기간: 무료 체험", "지금 다운로드 - 무료!"]
+  },
+  "zh": {
+    "h1_variations": ["在{tema}上遇到困难？", "轻松学习{tema}", "几分钟内掌握{tema}", "{tema}完整指南"],
+    "desc": "通过逐步解释，立即解决{tema}问题。Educare AI是最先进的教育工具。",
+    "btn": "🚀 在Play商店下载",
+    "benefit": "✓ 即时解决 ✓ 逐步指导 ✓ 24/7 AI导师 ✓ 98%准确率",
+    "subtexts": ["⭐ 15,000+条评价中获4.8/5星", "🏆 25个国家排名第一的教育应用"],
+    "features": ["拍照解题", "逐步解释", "带解答的练习题", "离线模式可用"],
+    "cta_urgency": ["限时优惠：免费试用", "立即下载 - 免费！"]
+  },
+  "ar": {
+    "h1_variations": ["هل تواجه مشاكل مع {tema}؟", "تعلم {tema} بسهولة", "أتقن {tema} في دقائق", "دليل كامل لـ {tema}"],
+    "desc": "حل مشاكل {tema} فوراً مع شرح خطوة بخطوة. Educare AI هي الأداة التعليمية الأكثر تقدماً.",
+    "btn": "🚀 التحميل من متجر بلاي",
+    "benefit": "✓ حلول فورية ✓ خطوة بخطوة ✓ مدرس ذكاء اصطناعي 24/7 ✓ دقة 98%",
+    "subtexts": ["⭐ 4.8/5 من أكثر من 15,000 تقييمًا", "🏆 تطبيق تعليمي رقم 1 في 25 دولة"],
+    "features": ["حل بالتصوير باستخدام الكاميرا", "شروحات خطوة بخطوة", "مسائل تدريبية مع الحلول", "وضع عدم الاتصال متاح"],
+    "cta_urgency": ["عرض محدود: نسخة تجريبية مجانية", "حمّل الآن - مجاني!"]
+  },
+  "hi": {
+    "h1_variations": ["{tema} से परेशान हैं?", "{tema} आसानी से सीखें", "{tema} में मिनटों में महारत हासिल करें", "{tema} की पूरी गाइड"],
+    "desc": "चरण-दर-चरण स्पष्टीकरण के साथ {tema} की समस्याओं को तुरंत हल करें। Educare AI सबसे उन्नत शैक्षिक उपकरण है।",
+    "btn": "🚀 प्ले स्टोर से डाउनलोड करें",
+    "benefit": "✓ तुरंत समाधान ✓ चरण-दर-चरण ✓ 24/7 AI ट्यूटर ✓ 98% सटीकता",
+    "subtexts": ["⭐ 15,000+ समीक्षाओं से 4.8/5", "🏆 25 देशों में #1 शैक्षिक ऐप"],
+    "features": ["कैमरे से फोटो खींचकर हल करें", "चरण-दर-चरण स्पष्टीकरण", "समाधान सहित अभ्यास समस्याएं", "ऑफ़लाइन मोड उपलब्ध"],
+    "cta_urgency": ["सीमित समय: निःशुल्क परीक्षण", "अब डाउनलोड करें - मुफ़्त!"]
+  },
+  "tr": {
+    "h1_variations": ["{tema} ile ilgili sorun mu yaşıyorsunuz?", "{tema} kolayca öğrenin", "{tema} dakikalar içinde ustalaşın", "{tema} için tam rehber"],
+    "desc": "{tema} sorunlarını adım adım açıklamalarla anında çözün. Educare AI en gelişmiş eğitim aracıdır.",
+    "btn": "🚀 PLAY STORE'DAN İNDİR",
+    "benefit": "✓ Anında çözümler ✓ Adım adım ✓ 7/24 AI öğretmen ✓ %98 doğruluk",
+    "subtexts": ["⭐ 15.000'den fazla yorumda 4.8/5", "🏆 25 ülkede 1 numaralı eğitim uygulaması"],
+    "features": ["Fotoğraf çekerek çözün", "Adım adım açıklamalar", "Çözümlü pratik problemler", "Çevrimdışı mod mevcut"],
+    "cta_urgency": ["Sınırlı süre: Ücretsiz deneme", "Şimdi indir - Ücretsiz!"]
+  },
+  "sv": {
+    "h1_variations": ["Har du problem med {tema}?", "Lär dig {tema} enkelt", "Bemästra {tema} på några minuter", "Komplett guide till {tema}"],
+    "desc": "Lös {tema} problem direkt med steg-för-steg förklaringar. Educare AI är det mest avancerade pedagogiska verktyget.",
+    "btn": "🚀 LADDA NER PÅ PLAY STORE",
+    "benefit": "✓ Omedelbara lösningar ✓ Steg-för-steg ✓ 24/7 AI-handledare ✓ 98% noggrannhet",
+    "subtexts": ["⭐ 4.8/5 från över 15.000 recensioner", "🏆 #1 Utbildningsapp i 25 länder"],
+    "features": ["Lös med kameran", "Steg-för-steg förklaringar", "Övningsproblem med lösningar", "Offline-läge tillgängligt"],
+    "cta_urgency": ["Begränsad tid: Gratis provperiod", "Ladda ner nu - Gratis!"]
+  },
+  "vi": {
+    "h1_variations": ["Gặp khó khăn với {tema}?", "Học {tema} dễ dàng", "Làm chủ {tema} trong vài phút", "Hướng dẫn đầy đủ về {tema}"],
+    "desc": "Giải quyết vấn đề {tema} ngay lập tức với giải thích từng bước. Educare AI là công cụ giáo dục tiên tiến nhất.",
+    "btn": "🚀 TẢI TRÊN PLAY STORE",
+    "benefit": "✓ Giải pháp tức thì ✓ Từng bước ✓ Gia sư AI 24/7 ✓ Độ chính xác 98%",
+    "subtexts": ["⭐ 4.8/5 từ hơn 15,000 đánh giá", "🏆 Ứng dụng Giáo dục số 1 tại 25 quốc gia"],
+    "features": ["Giải bằng camera", "Giải thích từng bước", "Bài tập thực hành kèm lời giải", "Chế độ ngoại tuyến có sẵn"],
+    "cta_urgency": ["Thời gian có hạn: Dùng thử miễn phí", "Tải ngay - Miễn phí!"]
+  },
+  "th": {
+    "h1_variations": ["มีปัญหากับ {tema}?", "เรียนรู้ {tema} ได้อย่างง่ายดาย", "เชี่ยวชาญ {tema} ในไม่กี่นาที", "คู่มือฉบับสมบูรณ์ของ {tema}"],
+    "desc": "แก้ปัญหา {tema} ได้ทันทีพร้อมคำอธิบายทีละขั้นตอน Educare AI เป็นเครื่องมือการศึกษาที่ทันสมัยที่สุด",
+    "btn": "🚀 ดาวน์โหลดบน PLAY STORE",
+    "benefit": "✓ คำตอบทันที ✓ ทีละขั้นตอน ✓ ผู้สอน AI 24/7 ✓ ความแม่นยำ 98%",
+    "subtexts": ["⭐ 4.8/5 จากรีวิวมากกว่า 15,000 รายการ", "🏆 แอปการศึกษาอันดับ 1 ใน 25 ประเทศ"],
+    "features": ["แก้ด้วยกล้อง", "คำอธิบายทีละขั้นตอน", "ปัญหาแบบฝึกหัดพร้อมคำตอบ", "โหมดออฟไลน์พร้อมใช้งาน"],
+    "cta_urgency": ["ข้อเสนอจำกัด: ทดลองใช้ฟรี", "ดาวน์โหลดเลย - ฟรี!"]
+  },
+  "id": {
+    "h1_variations": ["Ada masalah dengan {tema}?", "Pelajari {tema} dengan mudah", "Kuasi {tema} dalam hitungan menit", "Panduan lengkap {tema}"],
+    "desc": "Selesaikan masalah {tema} secara instan dengan penjelasan langkah demi langkah. Educare AI adalah alat pendidikan paling canggih.",
+    "btn": "🚀 UNDUH DI PLAY STORE",
+    "benefit": "✓ Solusi Instan ✓ Langkah demi Langkah ✓ Tutor AI 24/7 ✓ Akurasi 98%",
+    "subtexts": ["⭐ 4.8/5 dari 15,000+ ulasan", "🏆 Aplikasi Pendidikan #1 di 25 negara"],
+    "features": ["Pemecah kamera", "Penjelasan langkah demi langkah", "Soal latihan dengan solusi", "Mode offline tersedia"],
+    "cta_urgency": ["Waktu terbatas: Uji coba gratis", "Unduh sekarang - Gratis!"]
+  },
+  "el": {
+    "h1_variations": ["Έχετε προβλήματα με {tema};", "Μάθετε {tema} εύκολα", "Κατακτήστε {tema} σε λίγα λεπτά", "Πλήρης οδηγός για {tema}"],
+    "desc": "Λύστε προβλήματα {tema} άμεσα με βήμα-βήμα εξηγήσεις. Το Educare AI είναι το πιο προηγμένο εκπαιδευτικό εργαλείο.",
+    "btn": "🚀 ΛΗΨΗ ΑΠΟ PLAY STORE",
+    "benefit": "✓ Άμεσες λύσεις ✓ Βήμα-βήμα ✓ Δάσκαλος AI 24/7 ✓ Ακρίβεια 98%",
+    "subtexts": ["⭐ 4.8/5 από πάνω από 15.000 κριτικές", "🏆 #1 Εκπαιδευτική Εφαρμογή σε 25 χώρες"],
+    "features": ["Λύση με κάμερα", "Εξηγήσεις βήμα-βήμα", "Ασκήσεις εξάσκησης με λύσεις", "Λειτουργία εκτός σύνδεσης"],
+    "cta_urgency": ["Προσφορά περιορισμένου χρόνου: Δωρεάν δοκιμή", "Λήψη τώρα - Δωρεάν!"]
+  },
+  "cs": {
+    "h1_variations": ["Máte problémy s {tema}?", "Naučte se {tema} snadno", "Ovládněte {tema} během několika minut", "Kompletní průvodce {tema}"],
+    "desc": "Řešte problémy {tema} okamžitě s vysvětlením krok za krokem. Educare AI je nejpokročilejší vzdělávací nástroj.",
+    "btn": "🚀 STÁHNOUT Z PLAY STORE",
+    "benefit": "✓ Okamžitá řešení ✓ Krok za krokem ✓ AI tutor 24/7 ✓ 98% přesnost",
+    "subtexts": ["⭐ 4.8/5 z více než 15 000 recenzí", "🏆 #1 Vzdělávací aplikace v 25 zemích"],
+    "features": ["Řešení přes fotoaparát", "Vysvětlení krok za krokem", "Cvičné úlohy s řešeními", "Režim offline k dispozici"],
+    "cta_urgency": ["Časově omezená nabídka: Bezplatná zkušební verze", "Stáhnout nyní - Zdarma!"]
+  },
+  "hu": {
+    "h1_variations": ["Problémái vannak a {tema}-val?", "Tanulja meg a {tema}-t könnyedén", "Sajátítsa el a {tema}-t percek alatt", "Teljes útmutató a {tema}-hoz"],
+    "desc": "Oldja meg a {tema} problémákat azonnal lépésről lépésre magyarázatokkal. Az Educare AI a legfejlettebb oktatási eszköz.",
+    "btn": "🚀 LETÖLTÉS A PLAY STORE-BÓL",
+    "benefit": "✓ Azonnali megoldások ✓ Lépésről lépésre ✓ 24/7 AI oktató ✓ 98% pontosság",
+    "subtexts": ["⭐ 4.8/5 több mint 15 000 vélemény alapján", "🏆 #1 Oktatási alkalmazás 25 országban"],
+    "features": ["Megoldás kamerával", "Lépésről lépésre magyarázatok", "Gyakorló feladatok megoldásokkal", "Offline mód elérhető"],
+    "cta_urgency": ["Korlátozott idejű ajánlat: Ingyenes próbaverzió", "Töltse le most - Ingyenes!"]
+  },
+  "ro": {
+    "h1_variations": ["Aveți probleme cu {tema}?", "Învățați {tema} ușor", "Stăpâniți {tema} în câteva minute", "Ghid complet pentru {tema}"],
+    "desc": "Rezolvați problemele {tema} instantaneu cu explicații pas cu pas. Educare AI este cel mai avansat instrument educațional.",
+    "btn": "🚀 DESCARCAȚI DIN PLAY STORE",
+    "benefit": "✓ Soluții instantanee ✓ Pas cu pas ✓ Tutor AI 24/7 ✓ Precizie 98%",
+    "subtexts": ["⭐ 4.8/5 din peste 15.000 de recenzii", "🏆 Aplicație educațională #1 în 25 de țări"],
+    "features": ["Rezolvare cu camera", "Explicații pas cu pas", "Probleme de practică cu soluții", "Mod offline disponibil"],
+    "cta_urgency": ["Ofertă limitată: Încercare gratuită", "Descărcați acum - Gratuit!"]
+  },
+  "uk": {
+    "h1_variations": ["Проблеми з {tema}?", "Вивчайте {tema} легко", "Оволодійте {tema} за лічені хвилини", "Повний посібник з {tema}"],
+    "desc": "Розв'язуйте проблеми {tema} миттєво з покроковими поясненнями. Educare AI - найпередовіший освітній інструмент.",
+    "btn": "🚀 ЗАВАНТАЖИТИ В PLAY STORE",
+    "benefit": "✓ Миттєві рішення ✓ Покроково ✓ Репетитор ШІ 24/7 ✓ 98% точності",
+    "subtexts": ["⭐ 4.8/5 з понад 15,000 відгуків", "🏆 Освітній додаток №1 у 25 країнах"],
+    "features": ["Рішення через камеру", "Покрокові пояснення", "Практичні завдання з рішеннями", "Доступний офлайн-режим"],
+    "cta_urgency": ["Обмежений час: Безкоштовна пробна версія", "Завантажте зараз - Безкоштовно!"]
+  },
+  "he": {
+    "h1_variations": ["יש בעיות עם {tema}?", "למד {tema} בקלות", "שלוט ב-{tema} תוך דקות", "מדריך מלא ל-{tema}"],
+    "desc": "פתור בעיות {tema} באופן מיידי עם הסברים שלב אחר שלב. Educare AI הוא הכלי החינוכי המתקדם ביותר.",
+    "btn": "🚀 הורד מ-PLAY STORE",
+    "benefit": "✓ פתרונות מיידיים ✓ שלב אחר שלב ✓ מורה AI 24/7 ✓ דיוק 98%",
+    "subtexts": ["⭐ 4.8/5 מ-15,000+ ביקורות", "🏆 אפליקציה חינוכית מס' 1 ב-25 מדינות"],
+    "features": ["פתרון במצלמה", "הסברים שלב אחר שלב", "תרגילים עם פתרונות", "מצב לא מקוון זמין"],
+    "cta_urgency": ["זמן מוגבל: ניסיון חינם", "הורד עכשיו - חינם!"]
+  },
+  "bn": {
+    "h1_variations": ["{tema} নিয়ে সমস্যা হচ্ছে?", "সহজে {tema} শিখুন", "কয়েক মিনিটে {tema} আয়ত্ত করুন", "{tema} এর সম্পূর্ণ গাইড"],
+    "desc": "ধাপে ধাপে ব্যাখ্যা সহ সাথে সাথে {tema} সমস্যার সমাধান করুন। Educare AI হল সবচেয়ে উন্নত শিক্ষামূলক টুল।",
+    "btn": "🚀 প্লে স্টোর থেকে ডাউনলোড করুন",
+    "benefit": "✓ তাত্ক্ষণিক সমাধান ✓ ধাপে ধাপে ✓ 24/7 এআই টিউটর ✓ 98% নির্ভুলতা",
+    "subtexts": ["⭐ 15,000+ রিভিউতে 4.8/5", "🏆 25টি দেশে #1 শিক্ষামূলক অ্যাপ"],
+    "features": ["ক্যামেরা দিয়ে সমাধান", "ধাপে ধাপে ব্যাখ্যা", "সমাধান সহ অনুশীলন সমস্যা", "অফলাইন মোড উপলব্ধ"],
+    "cta_urgency": ["সীমিত সময়: বিনামূল্যে ট্রায়াল", "এখনই ডাউনলোড করুন - বিনামূল্যে!"]
+  },
+  "ta": {
+    "h1_variations": ["{tema} உடன் சிக்கல் உள்ளதா?", "{tema} எளிதாக கற்றுக்கொள்ளுங்கள்", "சில நிமிடங்களில் {tema} தேர்ச்சி பெறுங்கள்", "{tema} க்கான முழுமையான வழிகாட்டி"],
+    "desc": "படிப்படியான விளக்கங்களுடன் {tema} சிக்கல்களை உடனடியாக தீர்க்கவும். Educare AI மிகவும் மேம்பட்ட கல்விக் கருவியாகும்.",
+    "btn": "🚀 ப்ளே ஸ்டோரில் பதிவிறக்கவும்",
+    "benefit": "✓ உடனடி தீர்வுகள் ✓ படிப்படியாக ✓ 24/7 AI ஆசிரியர் ✓ 98% துல்லியம்",
+    "subtexts": ["⭐ 15,000+ மதிப்புரைகளில் 4.8/5", "🏆 25 நாடுகளில் #1 கல்வி பயன்பாடு"],
+    "features": ["கேமரா மூலம் தீர்வு", "படிப்படியான விளக்கங்கள்", "தீர்வுகளுடன் பயிற்சி சிக்கல்கள்", "ஆஃப்லைன் பயன்முறை கிடைக்கும்"],
+    "cta_urgency": ["குறிப்பிட்ட நேர சலுகை: இலவச சோதனை", "இப்போது பதிவிறக்கவும் - இலவசம்!"]
+  },
+  "te": {
+    "h1_variations": ["{tema} తో సమస్య ఉందా?", "{tema} సులభంగా నేర్చుకోండి", "{tema} ని నిమిషాల్లో ప్రావీణ్యం పొందండి", "{tema} కోసం పూర్తి గైడ్"],
+    "desc": "దశలవారీ వివరణలతో {tema} సమస్యలను తక్షణమే పరిష్కరించండి. Educare AI అత్యంత అభివృద్ధి చెందిన విద్యా సాధనం.",
+    "btn": "🚀 ప్లే స్టోర్ నుండి డౌన్లోడ్ చేయండి",
+    "benefit": "✓ తక్షణ పరిష్కారాలు ✓ దశలవారీ ✓ 24/7 AI ట్యూటర్ ✓ 98% ఖచ్చితత్వం",
+    "subtexts": ["⭐ 15,000+ సమీక్షలలో 4.8/5", "🏆 25 దేశాలలో #1 విద్యా యాప్"],
+    "features": ["కెమెరా ద్వారా పరిష్కారం", "దశలవారీ వివరణలు", "పరిష్కారాలతో ప్రాక్టీస్ సమస్యలు", "ఆఫ్‌లైన్ మోడ్ అందుబాటులో"],
+    "cta_urgency": ["పరిమిత సమయం: ఉచిత ట్రయల్", "ఇప్పుడే డౌన్లోడ్ చేయండి - ఉచితం!"]
+  },
+  "mr": {
+    "h1_variations": ["{tema} बरोबर समस्या आहे?", "{tema} सहजपणे शिका", "काही मिनिटांत {tema} मध्ये प्रभुत्व मिळवा", "{tema} साठी संपूर्ण मार्गदर्शक"],
+    "desc": "चरण-दर-चरण स्पष्टीकरणासह {tema} समस्यांचे त्वरित निराकरण करा. Educare AI हे सर्वात प्रगत शैक्षणिक साधन आहे.",
+    "btn": "🚀 प्ले स्टोअर वरून डाउनलोड करा",
+    "benefit": "✓ त्वरित उपाय ✓ चरण-दर-चरण ✓ 24/7 AI शिक्षक ✓ 98% अचूकता",
+    "subtexts": ["⭐ 15,000+ पुनरावलोकनांमधून 4.8/5", "🏆 25 देशांमध्ये #1 शैक्षणिक अॅप"],
+    "features": ["कॅमेरा सोल्व्हर", "चरण-दर-चरण स्पष्टीकरण", "उपायांसह सराव समस्या", "ऑफलाइन मोड उपलब्ध"],
+    "cta_urgency": ["मर्यादित वेळ: विनामूल्य चाचणी", "आत्ताच डाउनलोड करा - मोफत!"]
+  },
+  "kn": {
+    "h1_variations": ["{tema} ನಲ್ಲಿ ತೊಂದರೆ ಇದೆಯೇ?", "{tema} ಅನ್ನು ಸುಲಭವಾಗಿ ಕಲಿಯಿರಿ", "ನಿಮಿಷಗಳಲ್ಲಿ {tema} ಅನ್ನು ಮಾಸ್ಟರ್ ಮಾಡಿ", "{tema} ಗಾಗಿ ಸಂಪೂರ್ಣ ಮಾರ್ಗದರ್ಶಿ"],
+    "desc": "ಹಂತ-ಹಂತದ ವಿವರಣೆಗಳೊಂದಿಗೆ {tema} ಸಮಸ್ಯೆಗಳನ್ನು ತಕ್ಷಣವೇ ಪರಿಹರಿಸಿ. Educare AI ಅತ್ಯಾಧುನಿಕ ಶೈಕ್ಷಣಿಕ ಸಾಧನವಾಗಿದೆ.",
+    "btn": "🚀 ಪ್ಲೇ ಸ್ಟೋರ್ ನಿಂದ ಡೌನ್ಲೋಡ್ ಮಾಡಿ",
+    "benefit": "✓ ತಕ್ಷಣದ ಪರಿಹಾರಗಳು ✓ ಹಂತ-ಹಂತವಾಗಿ ✓ 24/7 AI ಬೋಧಕ ✓ 98% ನಿಖರತೆ",
+    "subtexts": ["⭐ 15,000+ ವಿಮರ್ಶೆಗಳಲ್ಲಿ 4.8/5", "🏆 25 ದೇಶಗಳಲ್ಲಿ #1 ಶೈಕ್ಷಣಿಕ ಅಪ್ಲಿಕೇಶನ್"],
+    "features": ["ಕ್ಯಾಮೆರಾ ಪರಿಹಾರಕ", "ಹಂತ-ಹಂತದ ವಿವರಣೆಗಳು", "ಪರಿಹಾರಗಳೊಂದಿಗೆ ಅಭ್ಯಾಸ ಸಮಸ್ಯೆಗಳು", "ಆಫ್‌ಲೈನ್ ಮೋಡ್ ಲಭ್ಯವಿದೆ"],
+    "cta_urgency": ["ಸೀಮಿತ ಸಮಯ: ಉಚಿತ ಪ್ರಯೋಗ", "ಈಗ ಡೌನ್ಲೋಡ್ ಮಾಡಿ - ಉಚಿತ!"]
+  },
+  "ms": {
+    "h1_variations": ["Ada masalah dengan {tema}?", "Pelajari {tema} dengan mudah", "Kuasai {tema} dalam masa beberapa minit", "Panduan lengkap untuk {tema}"],
+    "desc": "Selesaikan masalah {tema} dengan segera dengan penjelasan langkah demi langkah. Educare AI adalah alat pendidikan paling canggih.",
+    "btn": "🚀 MUAT TURUN DI PLAY STORE",
+    "benefit": "✓ Penyelesaian Segera ✓ Langkah demi Langkah ✓ Tutor AI 24/7 ✓ 98% Ketepatan",
+    "subtexts": ["⭐ 4.8/5 daripada 15,000+ ulasan", "🏆 Aplikasi Pendidikan #1 di 25 negara"],
+    "features": ["Penyelesai kamera", "Penjelasan langkah demi langkah", "Masalah latihan dengan penyelesaian", "Mod luar talian tersedia"],
+    "cta_urgency": ["Masa terhad: Percubaan percuma", "Muat turun sekarang - Percuma!"]
+  },
+  "tl": {
+    "h1_variations": ["May problema sa {tema}?", "Alamin ang {tema} nang madali", "Master ang {tema} sa ilang minuto", "Kumpletong gabay sa {tema}"],
+    "desc": "Lutasin ang mga problema sa {tema} agad-agad na may hakbang-hakbang na paliwanag. Ang Educare AI ay ang pinaka-advanced na tool na pang-edukasyon.",
+    "btn": "🚀 I-DOWNLOAD SA PLAY STORE",
+    "benefit": "✓ Agarang Solusyon ✓ Hakbang-hakbang ✓ 24/7 AI Tutor ✓ 98% Katumpakan",
+    "subtexts": ["⭐ 4.8/5 mula sa 15,000+ review", "🏆 #1 Pang-edukasyon na App sa 25 bansa"],
+    "features": ["Solver ng kamera", "Hakbang-hakbang na paliwanag", "Mga problema sa pagsasanay na may solusyon", "Offline mode na available"],
+    "cta_urgency": ["Limitadong oras: Libreng pagsubok", "I-download ngayon - Libre!"]
+  },
+  "sr": {
+    "h1_variations": ["Imate problema sa {tema}?", "Naučite {tema} lako", "Savladajte {tema} za nekoliko minuta", "Kompletan vodič za {tema}"],
+    "desc": "Rešavajte probleme sa {tema} odmah sa objašnjenjima korak po korak. Educare AI je najnapredniji obrazovni alat.",
+    "btn": "🚀 PREUZMI SA PLAY STORE",
+    "benefit": "✓ Trenutna rešenja ✓ Korak po korak ✓ AI učitelj 24/7 ✓ 98% tačnost",
+    "subtexts": ["⭐ 4.8/5 od više od 15.000 recenzija", "🏆 Obrazovna aplikacija broj 1 u 25 zemalja"],
+    "features": ["Rešavanje kamerom", "Objašnjenja korak po korak", "Vežbe sa rešenjima", "Offline režim dostupan"],
+    "cta_urgency": ["Ograničeno vreme: Besplatna probna verzija", "Preuzmite sada - Besplatno!"]
+  },
+  "hr": {
+    "h1_variations": ["Imate problema s {tema}?", "Naučite {tema} jednostavno", "Ovladajte {tema} u nekoliko minuta", "Potpuni vodič za {tema}"],
+    "desc": "Rješavajte probleme s {tema} odmah s objašnjenjima korak po korak. Educare AI je najnapredniji obrazovni alat.",
+    "btn": "🚀 PREUZMI NA PLAY STORE",
+    "benefit": "✓ Trenutna rješenja ✓ Korak po korak ✓ AI učitelj 24/7 ✓ 98% točnosti",
+    "subtexts": ["⭐ 4.8/5 od više od 15.000 recenzija", "🏆 Obrazovna aplikacija br. 1 u 25 zemalja"],
+    "features": ["Rješavanje kamerom", "Objašnjenja korak po korak", "Praktični problemi s rješenjima", "Offline način rada dostupan"],
+    "cta_urgency": ["Ograničeno vrijeme: Besplatna probna verzija", "Preuzmite sada - Besplatno!"]
+  },
+  "bg": {
+    "h1_variations": ["Имате проблеми с {tema}?", "Научете {tema} лесно", "Овладейте {tema} за минути", "Пълно ръководство за {tema}"],
+    "desc": "Решавайте проблеми с {tema} незабавно с обяснения стъпка по стъпка. Educare AI е най-модерният образователен инструмент.",
+    "btn": "🚀 ИЗТЕГЛИ ОТ PLAY STORE",
+    "benefit": "✓ Незабавни решения ✓ Стъпка по стъпка ✓ ИИ преподавател 24/7 ✓ 98% точност",
+    "subtexts": ["⭐ 4.8/5 от над 15,000 отзива", "🏆 #1 Образователно приложение в 25 държави"],
+    "features": ["Решаване с камера", "Обяснения стъпка по стъпка", "Практически задачи с решения", "Офлайн режим наличен"],
+    "cta_urgency": ["Ограничено време: Безплатен пробен период", "Изтегли сега - Безплатно!"]
+  },
+  "sk": {
+    "h1_variations": ["Máte problémy s {tema}?", "Naučte sa {tema} ľahko", "Ovpnite {tema} v priebehu niekoľkých minút", "Kompletný sprievodca pre {tema}"],
+    "desc": "Riešte problémy s {tema} okamžite s vysvetleniami krok za krokom. Educare AI je najmodernejší vzdelávací nástroj.",
+    "btn": "🚀 STIAHNUŤ Z PLAY STORE",
+    "benefit": "✓ Okamžité riešenia ✓ Krok za krokom ✓ AI tútor 24/7 ✓ 98% presnosť",
+    "subtexts": ["⭐ 4.8/5 z viac ako 15,000 recenzií", "🏆 Vzdelávacia aplikácia č.1 v 25 krajinách"],
+    "features": ["Riešenie cez kameru", "Vysvetlenia krok za krokom", "Cvičebné úlohy s riešeniami", "Offline režim k dispozícii"],
+    "cta_urgency": ["Obmedzený čas: Bezplatná skúšobná verzia", "Stiahnite teraz - Zadarmo!"]
+  },
+  "sl": {
+    "h1_variations": ["Imate težave z {tema}?", "Preprosto se naučite {tema}", "Obvladajte {tema} v nekaj minutah", "Popoln vodnik za {tema}"],
+    "desc": "Takoj rešite težave z {tema} s korak-za-korakom razlagami. Educare AI je najnaprednejše izobraževalno orodje.",
+    "btn": "🚀 PRENESI IZ PLAY STORE",
+    "benefit": "✓ Takojšnje rešitve ✓ Korak za korakom ✓ AI učitelj 24/7 ✓ 98% natančnosti",
+    "subtexts": ["⭐ 4.8/5 iz več kot 15,000 ocen", "🏆 Izobraževalna aplikacija št. 1 v 25 državah"],
+    "features": ["Reševanje s kamero", "Razlage korak za korakom", "Vadbene naloge z rešitvami", "Offline način na voljo"],
+    "cta_urgency": ["Omejen čas: Brezplačno preizkusno obdobje", "Prenesi zdaj - Brezplačno!"]
+  },
+  "lt": {
+    "h1_variations": ["Turite problemų su {tema}?", "Išmokite {tema} lengvai", "Įvaldykite {tema} per kelias minutes", "Išsamus {tema} vadovas"],
+    "desc": "Iš karto spręskite {tema} problemas su nuosekliais paaiškinimais. Educare AI yra pažangiausia mokymo priemonė.",
+    "btn": "🚀 ATSISIŲSTI IŠ PLAY STORE",
+    "benefit": "✓ Nedelsiant sprendimai ✓ Žingsnis po žingsnio ✓ 24/7 DI mokytojas ✓ 98% tikslumas",
+    "subtexts": ["⭐ 4.8/5 iš daugiau nei 15,000 atsiliepimų", "🏆 Švietimo programa Nr.1 25 šalyse"],
+    "features": ["Sprendimas per fotoaparatą", "Žingsnis po žingsnio paaiškinimai", "Praktinės užduotys su sprendimais", "Offline režimas pasiekiamas"],
+    "cta_urgency": ["Ribotas laikas: Nemokama bandomoji versija", "Atsisiųskite dabar - Nemokamai!"]
+  },
+  "lv": {
+    "h1_variations": ["Vai jums ir problēmas ar {tema}?", "Apgūstiet {tema} viegli", "Apgūstiet {tema} dažu minūšu laikā", "Pilnīgs {tema} ceļvedis"],
+    "desc": "Nekavējoties atrisiniet {tema} problēmas ar soli pa solim paskaidrojumiem. Educare AI ir vismodernākais izglītības rīks.",
+    "btn": "🚀 LEJUPIELĀDĒT NO PLAY STORE",
+    "benefit": "✓ Tūlītēji risinājumi ✓ Soli pa solim ✓ 24/7 AI pasniedzējs ✓ 98% precizitāte",
+    "subtexts": ["⭐ 4.8/5 no vairāk nekā 15,000 atsauksmēm", "🏆 Izglītības lietotne Nr.1 25 valstīs"],
+    "features": ["Risināšana ar kameru", "Soli pa solim paskaidrojumi", "Praktiskie uzdevumi ar risinājumiem", "Bezsaistes režīms pieejams"],
+    "cta_urgency": ["Ierobežots laiks: Bezmaksas izmēģinājuma versija", "Lejupielādējiet tagad - Bezmaksas!"]
+  },
+  "et": {
+    "h1_variations": ["Kas teil on probleeme {tema}-ga?", "Õppige {tema} lihtsalt", "Valdage {tema} mõne minutiga", "Täielik juhend {tema} kohta"],
+    "desc": "Lahendage {tema} probleeme koheselt samm-sammult selgitustega. Educare AI on kõige arenenum haridustööriist.",
+    "btn": "🚀 LAE PLAY STORE'ST",
+    "benefit": "✓ Kohesed lahendused ✓ Samm-sammult ✓ 24/7 AI juhendaja ✓ 98% täpsus",
+    "subtexts": ["⭐ 4.8/5 enam kui 15,000 arvustusest", "🏆 Haridusrakendus nr 1 25 riigis"],
+    "features": ["Lahendamine kaameraga", "Samm-sammult selgitused", "Harjutusülesanded lahendustega", "Offline režiim saadaval"],
+    "cta_urgency": ["Piiratud aeg: Tasuta prooviperiood", "Lae kohe - Tasuta!"]
+  },
+  "ka": {
+    "h1_variations": ["გაქვთ პრობლემები {tema}-თან?", "ისწავლეთ {tema} მარტივად", "დაეუფლეთ {tema} რამდენიმე წუთში", "{tema} სრული სახელმძღვანელო"],
+    "desc": "დაუყოვნებლივ მოაგვარეთ {tema} პრობლემები ნაბიჯ-ნაბიჯ განმარტებებით. Educare AI არის ყველაზე მოწინავე საგანმანათლებლო ინსტრუმენტი.",
+    "btn": "🚀 ჩამოტვირთეთ PLAY STORE-დან",
+    "benefit": "✓ მყისიერი გადაწყვეტილებები ✓ ნაბიჯ-ნაბიჯ ✓ 24/7 AI რეპეტიტორი ✓ 98% სიზუსტე",
+    "subtexts": ["⭐ 4.8/5 15,000+ მიმოხილვიდან", "🏆 #1 საგანმანათლებლო აპი 25 ქვეყანაში"],
+    "features": ["კამერით ამოხსნა", "ნაბიჯ-ნაბიჯ განმარტებები", "სავარჯიშო ამოცანები ამონახსნებით", "ხელმისაწვდომია ოფლაინ რეჟიმი"],
+    "cta_urgency": ["შეზღუდული დრო: უფასო საცდელი", "ჩამოტვირთეთ ახლავე - უფასოდ!"]
+  },
+  "az": {
+    "h1_variations": ["{tema} ilə probleminiz var?", "{tema} asanlıqla öyrənin", "{tema} dəqiqələr ərzində mənimsəyin", "{tema} üçün tam təlimat"],
+    "desc": "{tema} problemlərini addım-addım izahatlarla dərhal həll edin. Educare AI ən qabaqcıl təhsil alətidir.",
+    "btn": "🚀 PLAY STORE'DAN YÜKLƏ",
+    "benefit": "✓ Ani həllər ✓ Addım-addım ✓ 24/7 AI müəllim ✓ 98% dəqiqlik",
+    "subtexts": ["⭐ 15,000+ rəydən 4.8/5", "🏆 25 ölkədə #1 Təhsil Tətbiqi"],
+    "features": ["Kamera ilə həll", "Addım-addım izahatlar", "Həlləri olan təcrübə problemləri", "Oflayn rejim mövcuddur"],
+    "cta_urgency": ["Məhdud vaxt: Pulsuz sınaq", "İndi yüklə - Pulsuz!"]
+  },
+  "kk": {
+    "h1_variations": ["{tema} қатысты мәселелеріңіз бар ма?", "{tema} оңай үйреніңіз", "{tema} бірнеше минутта меңгеріңіз", "{tema} бойынша толық нұсқаулық"],
+    "desc": "{tema} мәселелерін қадамдық түсініктемелермен бірден шешіңіз. Educare AI - ең озық білім беру құралы.",
+    "btn": "🚀 PLAY STORE-ДАН ЖҮКТЕУ",
+    "benefit": "✓ Бірден шешімдер ✓ Қадамдық ✓ 24/7 AI репетитор ✓ 98% дәлдік",
+    "subtexts": ["⭐ 15,000+ пікірлерден 4.8/5", "🏆 25 елде #1 Білім беру қосымшасы"],
+    "features": ["Камерамен шешу", "Қадамдық түсініктемелер", "Шешімдері бар практикалық есептер", "Қол жетімді офлайн режимі"],
+    "cta_urgency": ["Шектеулі уақыт: Тегін сынақ", "Қазір жүктеңіз - Тегін!"]
+  },
+  "mn": {
+    "h1_variations": ["{tema} -тай холбоотой асуудал байна уу?", "{tema} -г хялбархан сур", "{tema} -г хэдхэн минутад эзэмш", "{tema} -д зориулсан бүрэн гарын авлага"],
+    "desc": "{tema} -ын асуудлыг алхам алхмаар тайлбараар шууд шийдээрэй. Educare AI бол хамгийн дэвшилтэт боловсролын хэрэгсэл юм.",
+    "btn": "🚀 PLAY STORE-С ТАТАХ",
+    "benefit": "✓ Шуурхай шийдэл ✓ Алхам алхмаар ✓ 24/7 AI багш ✓ 98% нарийвчлал",
+    "subtexts": ["⭐ 15,000+ тоймд 4.8/5", "🏆 25 оронд #1 Боловсролын апп"],
+    "features": ["Камераар шийдэх", "Алхам алхмаар тайлбар", "Шийдэл бүхий дадлагын асуудлууд", "Офлайн боломжтой"],
+    "cta_urgency": ["Хязгаарлагдмал хугацаа: Үнэгүй туршилт", "Одоо татаж авах - Үнэгүй!"]
+  },
+  "ne": {
+    "h1_variations": ["{tema} संग समस्या छ?", "{tema} सजिलै सिक्नुहोस्", "केही मिनेटमा {tema} मास्टर गर्नुहोस्", "{tema} को लागि पूर्ण गाइड"],
+    "desc": "चरण-दर-चरण व्याख्याको साथ {tema} समस्याहरू तुरुन्त समाधान गर्नुहोस्। Educare AI सबैभन्दा उन्नत शैक्षिक उपकरण हो।",
+    "btn": "🚀 PLAY STORE बाट डाउनलोड गर्नुहोस्",
+    "benefit": "✓ तुरुन्त समाधान ✓ चरण-दर-चरण ✓ 24/7 AI शिक्षक ✓ 98% शुद्धता",
+    "subtexts": ["⭐ 15,000+ समीक्षाहरूबाट 4.8/5", "🏆 25 देशहरूमा #1 शैक्षिक एप"],
+    "features": ["क्यामेरा समाधानकर्ता", "चरण-दर-चरण व्याख्या", "समाधान सहित अभ्यास समस्याहरू", "अफलाइन मोड उपलब्ध"],
+    "cta_urgency": ["सीमित समय: नि:शुल्क परीक्षण", "अहिले डाउनलोड गर्नुहोस् - नि:शुल्क!"]
+  },
+  "da": {
+    "h1_variations": ["Har du problemer med {tema}?", "Lær {tema} nemt", "Mestrer {tema} på få minutter", "Komplet guide til {tema}"],
+    "desc": "Løs {tema} problemer med det samme med trin-for-trin forklaringer. Educare AI er det mest avancerede uddannelsesværktøj.",
+    "btn": "🚀 DOWNLOAD PÅ PLAY STORE",
+    "benefit": "✓ Øjeblikkelige løsninger ✓ Trin-for-trin ✓ 24/7 AI-vejleder ✓ 98% nøjagtighed",
+    "subtexts": ["⭐ 4.8/5 fra over 15.000 anmeldelser", "🏆 #1 Uddannelsesapp i 25 lande"],
+    "features": ["Løs med kameraet", "Trin-for-trin forklaringer", "Øvelsesproblemer med løsninger", "Offline-tilstand tilgængelig"],
+    "cta_urgency": ["Begrænset tid: Gratis prøveperiode", "Download nu - Gratis!"]
+  },
+  "fa": {
+    "h1_variations": ["آیا با {tema} مشکل دارید؟", "{tema} را به آسانی یاد بگیرید", "در چند دقیقه بر {tema} مسلط شوید", "راهنمای کامل {tema}"],
+    "desc": "مسائل {tema} را فوراً با توضیحات گام به گام حل کنید. Educare AI پیشرفته‌ترین ابزار آموزشی است.",
+    "btn": "🚀 دانلود از PLAY STORE",
+    "benefit": "✓ راه حل های فوری ✓ گام به گام ✓ معلم هوش مصنوعی ۲۴/۷ ✓ دقت ۹۸٪",
+    "subtexts": ["⭐ ۴.۸/۵ از بیش از ۱۵۰۰۰ بررسی", "🏆 اپلیکیشن آموزشی شماره ۱ در ۲۵ کشور"],
+    "features": ["حل با دوربین", "توضیحات گام به گام", "مسائل تمرینی با راه حل", "حالت آفلاین در دسترس"],
+    "cta_urgency": ["زمان محدود: نسخه آزمایشی رایگان", "هم اکنون دانلود کنید - رایگان!"]
+  },
+  "fi": {
+    "h1_variations": ["Onko sinulla ongelmia {tema}:n kanssa?", "Opi {tema} helposti", "Hallitse {tema} muutamassa minuutissa", "Kattava opas {tema}:aan"],
+    "desc": "Ratkaise {tema} ongelmat heti vaiheittaisilla selityksillä. Educare AI on kehittynein koulutustyökalu.",
+    "btn": "🚀 LADAA PLAY STORE STA",
+    "benefit": "✓ Välittömät ratkaisut ✓ Vaiheittain ✓ 24/7 AI-opettaja ✓ 98% tarkkuus",
+    "subtexts": ["⭐ 4.8/5 yli 15 000 arvostelusta", "🏆 #1 Koulutussovellus 25 maassa"],
+    "features": ["Ratkaise kameralla", "Vaiheittaiset selitykset", "Harjoitusongelmat ratkaisuineen", "Offline-tila käytettävissä"],
+    "cta_urgency": ["Rajoitetun ajan tarjous: Ilmainen kokeilu", "Lataa nyt - Ilmainen!"]
+  },
+  "no": {
+    "h1_variations": ["Har du problemer med {tema}?", "Lær {tema} enkelt", "Mestrer {tema} på få minutter", "Komplett guide til {tema}"],
+    "desc": "Løs {tema} problemer umiddelbart med trinn-for-trinn forklaringer. Educare AI er det mest avanserte utdanningsverktøyet.",
+    "btn": "🚀 LAST NED PÅ PLAY STORE",
+    "benefit": "✓ Umiddelbare løsninger ✓ Trinn-for-trinn ✓ 24/7 AI-veileder ✓ 98% nøyaktighet",
+    "subtexts": ["⭐ 4.8/5 fra over 15.000 anmeldelser", "🏆 #1 Utdanningsapp i 25 land"],
+    "features": ["Løs med kameraet", "Trinn-for-trinn forklaringer", "Øvingsproblemer med løsninger", "Offline-modus tilgjengelig"],
+    "cta_urgency": ["Begrenset tid: Gratis prøveperiode", "Last ned nå - Gratis!"]
+  },
+  "ur": {
+    "h1_variations": ["کیا آپ کو {tema} کے ساتھ مشکلات ہیں؟", "{tema} آسانی سے سیکھیں", "منٹوں میں {tema} میں مہارت حاصل کریں", "{tema} کے لیے مکمل رہنما"],
+    "desc": "{tema} کے مسائل کو مرحلہ وار وضاحتوں کے ساتھ فوری طور پر حل کریں۔ Educare AI سب سے جدید تعلیمی ٹول ہے۔",
+    "btn": "🚀 پلے اسٹور سے ڈاؤن لوڈ کریں",
+    "benefit": "✓ فوری حل ✓ مرحلہ وار ✓ 24/7 AI ٹیوٹر ✓ 98% درستگی",
+    "subtexts": ["⭐ 15,000+ جائزوں سے 4.8/5", "🏆 25 ممالک میں #1 تعلیمی ایپ"],
+    "features": ["کیمرہ حل کنندہ", "مرحلہ وار وضاحتیں", "حل کے ساتھ مشق کے مسائل", "آف لائن موڈ دستیاب ہے"],
+    "cta_urgency": ["محدود وقت: مفت ٹرائل", "ابھی ڈاؤن لوڈ کریں - مفت!"]
+  }
+}

@@ -1,0 +1,488 @@
+import random
+
+def generar_html_seo(tema, lang, idx, depth=1, contenido_dinamico=None):
+    from modules.data_loader import config_loader
+    
+    textos = config_loader.load_json('texts.json')
+    stats_labels = config_loader.load_json('stats_labels.json')
+    
+    textos_lang = textos.get(lang, textos['en'])
+    labels = stats_labels.get(lang, stats_labels['en'])
+    
+    h1 = random.choice(textos_lang["h1_variations"]).replace("{tema}", tema)
+    desc = textos_lang["desc"].replace("{tema}", tema)
+    
+    if contenido_dinamico:
+        benefit = contenido_dinamico
+    else:
+        benefit = textos_lang["benefit"]
+    
+    features_list = random.sample(textos_lang["features"], 4)
+    features_html = " • ".join(features_list)
+    cta = random.choice(textos_lang["cta_urgency"])
+    subtext = random.choice(textos_lang["subtexts"])
+    
+    worker_url = "https://educare-gemini-api.stefanodelmoro7773.workers.dev"
+    
+    # UI TEXTS COMPLETOS CON TRADUCCIONES
+    UI_TEXTS = {
+        'es': {'ph': '✨ Escribe tu pregunta aquí...', 'btn': 'Preguntar →', 'thinking': '🧠 Pensando', 'error': '⚠️ Error de conexión', 'alert': '✏️ Escribe una pregunta primero'},
+        'en': {'ph': '✨ Write your question here...', 'btn': 'Ask →', 'thinking': '🧠 Thinking', 'error': '⚠️ Connection error', 'alert': '✏️ Write a question first'},
+        'fr': {'ph': '✨ Écrivez votre question ici...', 'btn': 'Demander →', 'thinking': '🧠 Réflexion', 'error': '⚠️ Erreur de connexion', 'alert': '✏️ Écrivez d\'abord une question'},
+        'de': {'ph': '✨ Schreiben Sie Ihre Frage hier...', 'btn': 'Fragen →', 'thinking': '🧠 Denke nach', 'error': '⚠️ Verbindungsfehler', 'alert': '✏️ Schreiben Sie zuerst eine Frage'},
+        'it': {'ph': '✨ Scrivi la tua domanda qui...', 'btn': 'Chiedi →', 'thinking': '🧠 Sto pensando', 'error': '⚠️ Errore di connessione', 'alert': '✏️ Scrivi prima una domanda'},
+        'pt': {'ph': '✨ Escreva sua pergunta aqui...', 'btn': 'Perguntar →', 'thinking': '🧠 Pensando', 'error': '⚠️ Erro de conexão', 'alert': '✏️ Escreva uma pergunta primeiro'},
+        'ja': {'ph': '✨ ここに質問を書いてください...', 'btn': '質問する →', 'thinking': '🧠 考え中', 'error': '⚠️ 接続エラー', 'alert': '✏️ まず質問を書いてください'},
+        'zh': {'ph': '✨ 在这里写下你的问题...', 'btn': '提问 →', 'thinking': '🧠 思考中', 'error': '⚠️ 连接错误', 'alert': '✏️ 请先写一个问题'},
+        'ru': {'ph': '✨ Напишите свой вопрос здесь...', 'btn': 'Спросить →', 'thinking': '🧠 Думаю', 'error': '⚠️ Ошибка соединения', 'alert': '✏️ Сначала напишите вопрос'},
+        'ar': {'ph': '✨ اكتب سؤالك هنا...', 'btn': 'اسأل →', 'thinking': '🧠 جاري التفكير', 'error': '⚠️ خطأ في الاتصال', 'alert': '✏️ اكتب سؤالاً أولاً'},
+        'hi': {'ph': '✨ अपना प्रश्न यहाँ लिखें...', 'btn': 'पूछें →', 'thinking': '🧠 सोच रहा हूँ', 'error': '⚠️ कनेक्शन त्रुटि', 'alert': '✏️ पहले एक प्रश्न लिखें'},
+    }
+    
+    ui = UI_TEXTS.get(lang, UI_TEXTS['es'])
+    
+    # Pasar el idioma al JavaScript
+    js_integration = f"""
+    <script>
+        const worker_url = '{worker_url}';
+        const currentLang = '{lang}';
+        const uiTexts = {{
+            ph: '{ui["ph"]}',
+            btn: '{ui["btn"]}',
+            thinking: '{ui["thinking"]}',
+            error: '{ui["error"]}',
+            alert: '{ui["alert"]}'
+        }};
+        
+        function markdownToHtml(text) {{
+            text = text.replace(/\\*\\*([^*]+)\\*\\*/g, '<strong>$1</strong>');
+            text = text.replace(/\\*([^*]+)\\*/g, '<em>$1</em>');
+            text = text.replace(/\\n/g, '<br>');
+            return text;
+        }}
+        
+        async function typeText(element, text, speed = 8) {{
+            element.innerHTML = '';
+            const htmlText = markdownToHtml(text);
+            let i = 0, inTag = false, tagBuffer = '';
+            while (i < htmlText.length) {{
+                if (htmlText[i] === '<') {{ inTag = true; tagBuffer = ''; }}
+                if (inTag) {{
+                    tagBuffer += htmlText[i];
+                    if (htmlText[i] === '>') {{
+                        element.innerHTML += tagBuffer;
+                        inTag = false;
+                    }}
+                    i++;
+                }} else {{
+                    element.innerHTML += htmlText[i];
+                    i++;
+                    await new Promise(resolve => setTimeout(resolve, speed));
+                }}
+            }}
+        }}
+        
+        async function fetchAIContent(promptText, isInitial = false) {{
+            const div = document.querySelector('.benefit');
+            if (!div) return;
+            
+            let dots = 0;
+            const loadingInterval = setInterval(() => {{
+                dots = (dots + 1) % 4;
+                div.innerHTML = '<span style="background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">' + uiTexts.thinking + '.'.repeat(dots) + '</span>';
+            }}, 300);
+            
+            try {{
+                // Enviar el idioma al Worker para que responda en el idioma correcto
+                const response = await fetch(worker_url, {{
+                    method: 'POST',
+                    headers: {{ 'Content-Type': 'application/json' }},
+                    body: JSON.stringify({{ prompt: promptText, lang: currentLang }})
+                }});
+                const data = await response.json();
+                clearInterval(loadingInterval);
+                if(data.text) {{
+                    await typeText(div, data.text, 8);
+                }} else {{
+                    div.innerHTML = '<span style="color:#ff6b6b;">⚠️ ' + uiTexts.error + '</span>';
+                }}
+            }} catch (e) {{
+                clearInterval(loadingInterval);
+                div.innerHTML = '<span style="color:#ff6b6b;">💡 ' + uiTexts.error + '</span>';
+            }}
+        }}
+        
+        async function handleUserQuestion() {{
+            const input = document.getElementById('userInput');
+            const question = input.value.trim();
+            if (question === "") {{
+                alert(uiTexts.alert);
+                return;
+            }}
+            await fetchAIContent(question, false);
+            input.value = "";
+        }}
+        
+        document.addEventListener('DOMContentLoaded', () => {{
+            const input = document.getElementById('userInput');
+            if (input) {{
+                input.placeholder = uiTexts.ph;
+                input.addEventListener('keypress', (e) => {{
+                    if (e.key === 'Enter') handleUserQuestion();
+                }});
+            }}
+            const btn = document.querySelector('.ask-btn');
+            if (btn) {{
+                btn.textContent = uiTexts.btn;
+            }}
+            // Pasar el idioma en el prompt inicial también
+            fetchAIContent("Explica de forma útil y breve sobre: {tema}", true);
+        }});
+    </script>
+    """
+    
+    css_futurista = """
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #1a1a3e 25%, #302b63 50%, #24243e 75%, #0f0c29 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .particle {
+            position: fixed;
+            background: radial-gradient(circle, rgba(102,126,234,0.6) 0%, rgba(118,75,162,0.4) 50%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatParticle 20s infinite ease-in-out;
+            filter: blur(2px);
+        }
+        
+        @keyframes floatParticle {
+            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+            20% { opacity: 0.6; }
+            100% { transform: translateY(-500px) translateX(200px) scale(0.3); opacity: 0; }
+        }
+        """ + ''.join([f'.particle:nth-child({i}) {{ top: {random.randint(1, 95)}%; left: {random.randint(1, 95)}%; width: {random.randint(40, 120)}px; height: {random.randint(40, 120)}px; animation-duration: {random.randint(15, 35)}s; animation-delay: {random.randint(0, 10)}s; }}' for i in range(1, 31)]) + """
+        
+        .card {
+            background: rgba(15, 25, 45, 0.75);
+            backdrop-filter: blur(20px);
+            border-radius: 56px;
+            padding: 60px 80px;
+            max-width: 1400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5), 0 0 0 1px rgba(102,126,234,0.3);
+            transition: all 0.5s cubic-bezier(0.2,0.9,0.4,1.1);
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(102,126,234,0.4);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            border-color: rgba(102,126,234,0.8);
+        }
+        
+        .brand-title {
+            font-size: 4.2em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            letter-spacing: -3px;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%,100% { filter: drop-shadow(0 0 10px rgba(102,126,234,0.5)); }
+            50% { filter: drop-shadow(0 0 30px rgba(102,126,234,0.9)); }
+        }
+        
+        .robot-icon {
+            font-size: 110px;
+            margin: 20px 0;
+            animation: waveFloat 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 25px rgba(102,126,234,0.7));
+        }
+        
+        @keyframes waveFloat {
+            0%,100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-18px) rotate(6deg); }
+        }
+        
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 25px 0 20px;
+            font-weight: 800;
+        }
+        
+        .description {
+            font-size: 1.25em;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .benefit {
+            background: linear-gradient(135deg, rgba(102,126,234,0.15) 0%, rgba(118,75,162,0.15) 100%);
+            backdrop-filter: blur(10px);
+            padding: 32px 38px;
+            border-radius: 32px;
+            margin: 30px 0;
+            color: #e2e8f0;
+            font-size: 1.1em;
+            border: 1px solid rgba(102,126,234,0.3);
+            text-align: left;
+            line-height: 1.7;
+            min-height: 150px;
+            transition: all 0.3s;
+        }
+        
+        .benefit strong { color: #a78bfa; }
+        .benefit:hover { border-color: rgba(102,126,234,0.6); box-shadow: 0 10px 30px rgba(102,126,234,0.2); }
+        
+        .input-container {
+            margin: 35px 0;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        
+        #userInput {
+            flex: 1;
+            min-width: 320px;
+            padding: 18px 28px;
+            border-radius: 60px;
+            border: 2px solid rgba(102,126,234,0.3);
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(5px);
+            color: white;
+            font-size: 1.1em;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        #userInput::placeholder { color: rgba(255,255,255,0.5); }
+        #userInput:focus { border-color: #667eea; box-shadow: 0 0 0 4px rgba(102,126,234,0.3); background: rgba(255,255,255,0.12); }
+        
+        .ask-btn {
+            padding: 18px 50px;
+            border-radius: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ask-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .ask-btn:hover::before { left: 100%; }
+        .ask-btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(102,126,234,0.5); }
+        
+        .features {
+            background: rgba(248,250,252,0.08);
+            backdrop-filter: blur(10px);
+            padding: 25px 32px;
+            border-radius: 32px;
+            margin: 30px 0;
+            color: #cbd5e1;
+            font-size: 1em;
+            border: 1px solid rgba(102,126,234,0.2);
+            line-height: 1.6;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin: 45px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(10px);
+            padding: 25px 38px;
+            border-radius: 44px;
+            border: 1px solid rgba(102,126,234,0.2);
+            transition: all 0.3s;
+            min-width: 150px;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            border-color: rgba(102,126,234,0.5);
+            background: rgba(255,255,255,0.08);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .stat-number {
+            font-size: 3.2em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            font-size: 0.85em;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 12px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px 65px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin: 25px 0 20px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn:hover::before { left: 100%; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 15px 40px rgba(102,126,234,0.5); }
+        
+        .subtext { color: #94a3b8; font-size: 0.95em; margin: 15px 0; }
+        
+        .cta-urgency {
+            background: linear-gradient(135deg, rgba(254,243,199,0.2), rgba(253,230,138,0.1));
+            backdrop-filter: blur(10px);
+            color: #fde68a;
+            padding: 15px 40px;
+            border-radius: 60px;
+            margin: 25px 0 15px;
+            display: inline-block;
+            border: 1px solid rgba(253,230,138,0.3);
+        }
+        
+        .footer {
+            margin-top: 45px;
+            font-size: 0.85em;
+            color: #64748b;
+            border-top: 1px solid rgba(102,126,234,0.2);
+            padding-top: 28px;
+        }
+        
+        @media (max-width: 768px) {
+            .card { padding: 35px 25px; max-width: 100%; }
+            h1 { font-size: 1.8em; }
+            .brand-title { font-size: 2.5em; letter-spacing: -1px; }
+            .robot-icon { font-size: 70px; }
+            .stats { gap: 20px; }
+            .stat-item { padding: 15px 22px; min-width: 100px; }
+            .stat-number { font-size: 2em; }
+            .input-container { flex-direction: column; }
+            .ask-btn { width: 100%; }
+            .benefit { padding: 20px 25px; font-size: 0.95em; }
+        }
+        
+        @media (max-width: 480px) {
+            .card { padding: 25px 18px; }
+            h1 { font-size: 1.4em; }
+            .brand-title { font-size: 2em; }
+            .robot-icon { font-size: 55px; }
+            .features { font-size: 0.85em; padding: 18px; }
+        }
+    </style>
+    """
+    
+    particles = ''.join(['<div class="particle"></div>' for _ in range(30)])
+    
+    return f'''<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="{desc[:200]}">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="{tema} | Educare AI">
+    <meta property="og:description" content="{desc[:200]}">
+    <meta property="og:image" content="/static/images/logo-nuevo.png">
+    <meta property="og:url" content="https://stef7773.github.io/EducareAI_Modular/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Educare AI">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{tema} | Educare AI">
+    <meta name="twitter:description" content="{desc[:200]}">
+    <meta name="twitter:image" content="/static/images/logo-nuevo.png">
+    
+    <title>{tema} | Educare AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    {css_futurista}
+</head>
+<body>
+    {particles}
+    <div class="card">
+        <div class="brand-title">Educare <span>AI</span></div>
+        <div class="robot-icon">🤖</div>
+        <h1>{h1}</h1>
+        <p class="description">{desc}</p>
+        <div class="benefit">{benefit}</div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="{ui['ph']}">
+            <button class="ask-btn" onclick="handleUserQuestion()">{ui['btn']}</button>
+        </div>
+        <div class="stats">
+            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">{labels['students']}</div></div>
+            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ {labels['rating']}</div></div>
+            <div class="stat-item"><div class="stat-number">98%</div><div class="stat-label">{labels['accuracy']}</div></div>
+        </div>
+        <div class="features">{features_html}</div>
+        <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="btn">{textos_lang['btn']}</a>
+        <p class="subtext">{subtext}</p>
+        <div class="cta-urgency">{cta}</div>
+        <p class="footer">© 2026 Educare AI - {tema}</p>
+    </div>
+    {js_integration}
+</body>
+</html>'''

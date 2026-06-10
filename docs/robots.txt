@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://stef7773.github.io/EducareAI_Modular/sitemap_index.xml
+Crawl-delay: 1
